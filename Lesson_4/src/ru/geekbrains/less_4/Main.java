@@ -8,7 +8,7 @@ public class Main {
     private static void increaser(Employee[] emp, byte age, float increment){
         for (int i = 0; i < emp.length; i++) {
             if (emp[i].getAge() > age) {
-                emp[i].setSalary(emp[i].getSalary() + 5000);
+                emp[i].setSalary(emp[i].getSalary());
                 emp[i].setSalary(increment);
                 emp[i].isSalaryChanged = true;
             }
